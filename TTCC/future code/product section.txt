@@ -1,0 +1,24 @@
+        <section class="productContainer">
+
+            <div class="ProductConent">
+                <h2 class="ProductHeading">Featured Products</h2>
+                <div class="productList">
+                    <div class="Product">
+                        <img src="/images/mop.png" alt="A mop" class="productImg">
+                        <a href="" class="productName">Serene Domicile Maintenance</a>
+                        <p class="productCost">$25</p>
+                    </div>
+                    <div class="Product">
+                        <img src="/images/mopSoaps.png" alt="mop and soap" class="productImg">
+                        <a href="" class="productName">LuxeSpace Sanitization</a>
+                        <p class="productCost">$25</p>
+                    </div>
+                    <div class="Product">
+                        <img src="/images/soapsBrushes.png" alt="soaps and brushes" class="productImg">
+                        <a href="" class="productName">Prestige Clean Solutions</a>
+                        <p class="productCost">$25</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>

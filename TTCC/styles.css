@@ -1,0 +1,1106 @@
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+  font-family: 'manrope';
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+a {
+    text-decoration: none; /* Removes the underline */
+}
+
+header {
+  background-color: hsl(0, 0%, 86%);
+}
+
+.heroImg {
+    height: 50rem;
+    max-width: 100%;
+    background-image: url(/images/cleaningToolsdark.PNG);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+.headerContent {
+    padding: 3rem;
+    padding-bottom: 1rem;
+}
+
+.headerLogo {
+    font-size: 1.5rem;
+}
+
+.navContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navLink {
+    color: black;
+    padding-right: 2rem;
+}
+
+.book {
+    color: white;
+    padding-left: 2rem;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    background-color: hsl(0, 0%, 11%);
+    border-radius: 2rem;
+}
+
+.heroHeading {
+    text-align: center;
+    font-size: 4.7rem;
+    font-weight: 400;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+}
+
+.heroText {
+  position: relative;
+  width: 35%;
+  top: 60%;
+  left: 3%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.serviceSection {
+  padding: 3rem;
+}
+
+.servicesectionHeading {
+  font-size: 4rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service {
+  width: 30%;
+  height: 40rem;
+  text-align: center;
+}
+
+.serviceImgContainer {
+  padding-bottom: 3rem;
+}
+
+.serviceName {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.footerHeading {
+  text-align: center;
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  text-decoration: underline;
+}
+
+.footerInfo {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-bottom: 5rem;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  padding-right: 3rem;
+  padding-top: 10rem;
+}
+
+.aboutus {
+  width: 50%;
+  height: 50rem;
+}
+
+.aboutHeader {
+  font-size: 5rem;
+  padding-left: 4rem;
+  padding-bottom: 2rem;
+}
+
+.aboutImg {
+  width: 50%;
+}
+
+.mop {
+  height: 100%;
+}
+
+.aboutText {
+  padding-left: 4rem;
+  width: 50%;
+}
+
+.request {
+  color: white;
+  background-color: black;
+  padding: 1rem;
+  border-radius: 3rem;
+}
+
+.serviceDescription {
+  padding-bottom: 2REM;
+}
+
+@media screen and (min-width: 319px) and (max-width: 321px) {
+  
+  .headerContent {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .navContainer {
+    
+  }
+
+  .navContent {
+    flex-direction: column;
+  }
+
+  .headerLogo {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .headerNav {
+
+  }
+
+  .navLink {
+    font-size: 0.5rem;
+    padding: 1rem;
+  }
+
+  .book {
+    padding: 0.5rem;
+  }
+
+  .headerContent {
+    height: 25rem;
+  }
+
+  .heroHeading {
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  .heroImg {
+
+  }
+
+  .heroText {
+    width: 30%;
+    top: 3%;
+    font-size: .5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    height: auto;
+  }
+
+  .aboutus {
+    width: 100%;
+    height: 12.5rem;
+  }
+
+  .aboutHeader {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .aboutText {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .aboutImg {
+    width: 100%;
+  }
+
+  .mop {
+    height: auto;
+  }
+
+  .serviceSection {
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+
+  .servicesectionHeading {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service {
+    width: 100%;
+    height: 35rem;
+    text-align: center;
+  }
+
+  .serviceImgContainer {
+    height: 10.5rem;
+    padding-bottom: 0;
+  }
+
+  .serviceImg {
+
+  }
+
+  .serviceName {
+    padding-top: 1rem;
+  }
+
+  .serviceCost {
+    font-size: 1rem;
+  }
+
+  .serviceDescription {
+    font-size: 0.75rem;
+  }
+
+  .request {
+
+  }
+
+  .footerContainer {
+
+  }
+
+  .footerContent {
+
+  }
+
+  .footerHeading {
+    padding: 0rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .info {
+
+  }
+
+  .infoHeading {
+
+  }
+
+  .address {
+
+  }
+
+  .email {
+
+  }
+
+  .number {
+
+  }
+
+}
+
+@media screen and (min-width: 322px) and (max-width: 376px) {
+
+  .headerContent {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .navContainer {
+    
+  }
+
+  .navContent {
+    flex-direction: column;
+  }
+
+  .headerLogo {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .headerNav {
+
+  }
+
+  .navLink {
+    font-size: 0.5rem;
+    padding: 1rem;
+  }
+
+  .book {
+    padding: 0.5rem;
+  }
+
+  .headerContent {
+    height: 26rem;
+  }
+
+  .heroHeading {
+    font-size: 2rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .heroImg {
+
+  }
+
+  .heroText {
+    width: 30%;
+    top: 7%;
+    font-size: .5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    height: auto;
+  }
+
+  .aboutus {
+    width: 100%;
+    height: 11rem;
+  }
+
+  .aboutHeader {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .aboutText {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .aboutImg {
+    width: 100%;
+  }
+
+  .mop {
+    height: auto;
+  }
+
+  .serviceSection {
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+
+  .servicesectionHeading {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service {
+    width: 100%;
+    height: 32rem;
+    text-align: center;
+  }
+
+  .serviceImgContainer {
+    height: 12.5rem;
+    padding-bottom: 0;
+  }
+
+  .serviceImg {
+
+  }
+
+  .serviceName {
+    padding-top: 1rem;
+  }
+
+  .serviceCost {
+    font-size: 1rem;
+  }
+
+  .serviceDescription {
+    font-size: 0.75rem;
+  }
+
+  .request {
+
+  }
+
+  .footerContainer {
+
+  }
+
+  .footerContent {
+
+  }
+
+  .footerHeading {
+    padding: 0rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .info {
+
+  }
+
+  .infoHeading {
+
+  }
+
+  .address {
+
+  }
+
+  .email {
+
+  }
+
+  .number {
+
+  }
+
+}
+
+@media screen and (min-width: 377px) and (max-width: 426px) {
+
+  .headerContent {
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  .navContainer {
+    
+  }
+
+  .navContent {
+    flex-direction: column;
+  }
+
+  .headerLogo {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .navbar {
+    text-align: center;
+    padding-top: 0.5rem;
+  }
+
+  .headerNav {
+
+  }
+
+  .navLink {
+    font-size: 0.5rem;
+    padding: 1rem;
+  }
+
+  .book {
+    padding: 0.5rem;
+  }
+
+  .headerContent {
+    height: 26rem;
+  }
+
+  .heroHeading {
+    font-size: 2rem;
+    padding: 0rem;
+    padding-bottom: 1rem;
+  }
+
+  .heroImg {
+
+  }
+
+  .heroText {
+    width: 30%;
+    top: 10%;
+    font-size: .5rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    height: auto;
+  }
+
+  .aboutus {
+    width: 100%;
+    height: 11rem;
+  }
+
+  .aboutHeader {
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+    padding-top: 1rem;
+  }
+
+  .aboutText {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+    font-size: 0.5rem;
+  }
+
+  .aboutImg {
+    width: 100%;
+  }
+
+  .mop {
+    height: auto;
+  }
+
+  .serviceSection {
+    padding: 1rem;
+    padding-top: 0rem;
+  }
+
+  .servicesectionHeading {
+    font-size: 2rem;
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    text-align: center;
+  }
+
+  .services {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .service {
+    width: 100%;
+    height: 35rem;
+    text-align: center;
+  }
+
+  .serviceImgContainer {
+    height: 15rem;
+    padding-bottom: 0;
+  }
+
+  .serviceImg {
+
+  }
+
+  .serviceName {
+    padding-top: 1rem;
+  }
+
+  .serviceCost {
+    font-size: 1rem;
+  }
+
+  .serviceDescription {
+    font-size: 0.75rem;
+  }
+
+  .request {
+
+  }
+
+  .footerContainer {
+
+  }
+
+  .footerContent {
+
+  }
+
+  .footerHeading {
+    padding: 0rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .footerInfo {
+    flex-direction: column;
+    padding-bottom: 3rem;
+  }
+
+  .info {
+
+  }
+
+  .infoHeading {
+
+  }
+
+  .address {
+
+  }
+
+  .email {
+
+  }
+
+  .number {
+
+  }
+}
+
+  @media screen and (min-width: 427px) and (max-width: 769px) {
+
+    header {
+      height: 37rem;
+    }
+    .headerContent {
+      padding: 0;
+      padding-top: 1rem;
+      height: 100rem;
+    }
+  
+    .navContainer {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .navContent {
+      flex-direction: row;
+    }
+  
+    .headerLogo {
+      font-size: 1rem;
+      text-align: center;
+    }
+  
+    .navbar {
+      text-align: center;
+      padding-top: 0rem;
+    }
+  
+    .headerNav {
+  
+    }
+  
+    .navLink {
+      font-size: 0.75rem;
+      padding: 1rem;
+    }
+  
+    .book {
+      padding: 0.5rem;
+    }
+  
+    .headerContent {
+      height: 26rem;
+    }
+  
+    .heroHeading {
+      font-size: 2rem;
+      padding: 0rem;
+      padding-bottom: 1rem;
+    }
+  
+    .heroImg {
+  
+    }
+  
+    .heroText {
+      width: 30%;
+      top: 12%;
+      font-size: 1rem;
+    }
+  
+    .about {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0rem;
+      padding-top: 0rem;
+      height: auto;
+    }
+  
+    .aboutus {
+      width: 100%;
+      height: 9rem;
+    }
+  
+    .aboutHeader {
+      font-size: 1rem;
+      padding-left: 1rem;
+      padding-bottom: 0rem;
+      padding-top: 1rem;
+    }
+  
+    .aboutText {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      width: 100%;
+      font-size: 0.5rem;
+    }
+  
+    .aboutImg {
+      width: 100%;
+    }
+  
+    .mop {
+      height: auto;
+    }
+  
+    .serviceSection {
+      padding: 1rem;
+      padding-top: 0rem;
+    }
+  
+    .servicesectionHeading {
+      font-size: 2rem;
+      padding-top: 0rem;
+      padding-bottom: 2rem;
+      text-align: center;
+    }
+  
+    .services {
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  
+    .service {
+      width: 100%;
+      height: 42rem;
+      text-align: center;
+    }
+  
+    .serviceImgContainer {
+      height: 27rem;
+      padding-bottom: 0;
+    }
+  
+    .serviceImg {
+  
+    }
+  
+    .serviceName {
+      padding-top: 1rem;
+    }
+  
+    .serviceCost {
+      font-size: 1rem;
+    }
+  
+    .serviceDescription {
+      font-size: 0.75rem;
+    }
+  
+    .request {
+  
+    }
+  
+    .footerContainer {
+  
+    }
+  
+    .footerContent {
+  
+    }
+  
+    .footerHeading {
+      padding: 0rem;
+      padding-bottom: 2rem;
+      font-size: 2rem;
+    }
+  
+    .footerInfo {
+      flex-direction: column;
+      padding-bottom: 3rem;
+    }
+  
+    .info {
+  
+    }
+  
+    .infoHeading {
+  
+    }
+  
+    .address {
+  
+    }
+  
+    .email {
+  
+    }
+  
+    .number {
+  
+    }
+
+  }
+
+    @media screen and (min-width: 770px) and (max-width: 1025px)  {
+    
+    header {
+      background-color: hsl(0, 0%, 86%);
+    }
+    
+    .heroImg {
+        height: 50rem;
+        max-width: 100%;
+        background-image: url(/images/cleaningToolsdark.PNG);
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+    
+    .headerContent {
+        padding: 3rem;
+        padding-bottom: 1rem;
+        height: 50rem;
+    }
+    
+    .headerLogo {
+        font-size: 1rem;
+    }
+    
+    .navContent {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .navLink {
+        color: black;
+        padding-right: 2rem;
+    }
+    
+    .book {
+        color: white;
+        padding-left: 2rem;
+        padding-top: 1.25rem;
+        padding-bottom: 1.25rem;
+        background-color: hsl(0, 0%, 11%);
+        border-radius: 2rem;
+    }
+    
+    .heroHeading {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .heroText {
+      position: relative;
+      width: 35%;
+      top: 42%;
+      left: 3%;
+      color: white;
+      font-size: 1rem;
+    }
+    
+    .serviceSection {
+      padding: 3rem;
+      padding-top: 0rem;
+    }
+    
+    .servicesectionHeading {
+      font-size: 4rem;
+      padding-top: 0rem;
+      padding-bottom: 3rem;
+      text-align: center;
+    }
+    
+    .services {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .service {
+      width: 30%;
+      height: 40rem;
+      text-align: center;
+    }
+    
+    .serviceImgContainer {
+      padding-bottom: 3rem;
+    }
+    
+    .serviceName {
+      font-size: 1.5rem;
+      color: black;
+    }
+    
+    .footerHeading {
+      text-align: center;
+      font-size: 5rem;
+      padding-bottom: 5rem;
+      text-decoration: underline;
+    }
+    
+    .footerInfo {
+      display: flex;
+      text-align: center;
+      justify-content: space-evenly;
+      padding-bottom: 5rem;
+    }
+    
+    .about {
+      display: flex;
+      flex-direction: row;
+      padding-right: 3rem;
+      padding-top: 0rem;
+      padding-left: 3rem;
+    }
+    
+    .aboutus {
+      width: 50%;
+      height: 32rem;
+    }
+    
+    .aboutHeader {
+      font-size: 2.5rem;
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+    
+    .aboutImg {
+      width: 50%;
+    }
+    
+    .mop {
+      height: 100%;
+    }
+    
+    .aboutText {
+      padding-left: 1rem;
+      width: 90%;
+    }
+    
+    .request {
+      color: white;
+      background-color: black;
+      padding: 1rem;
+      border-radius: 3rem;
+    }
+    
+    .serviceDescription {
+      padding-bottom: 2REM;
+    }
+
+    }
